@@ -1,0 +1,128 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.arrow {
+  background: black;
+}
+
+#map {
+  height: 500px;
+  z-index: 1;
+}
+
+header {
+  background: url("../assets/Images/pattern-bg.png");
+  position: relative;
+  padding-bottom: 170px;
+}
+
+header h2 {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-block: 25px;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+#isp {
+  margin-bottom: 0;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  width: 90%;
+  margin-inline: 5%;
+  padding-block: 20px;
+  border-radius: 12px;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  z-index: 2;
+}
+
+.info-container div {
+  width: 100%;
+  text-align: center;
+}
+
+.info-container label {
+  color: grey;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.info-container p {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+  width: clamp(300px, 90%, 650px);
+  margin-inline: auto;
+}
+
+.search-container #searchInput {
+  padding-left: 10px;
+  padding-block: 15px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: calc(90% - 27px);
+  font-size: 15px;
+}
+
+.search-container #searchInput::-webkit-input-placeholder {
+  color: gray;
+}
+
+.search-container #searchInput:-ms-input-placeholder {
+  color: gray;
+}
+
+.search-container #searchInput::-ms-input-placeholder {
+  color: gray;
+}
+
+.search-container #searchInput::placeholder {
+  color: gray;
+}
+
+.search-container .arrow {
+  padding: 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 668px) {
+  header {
+    padding-bottom: 50px;
+  }
+  .info-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info-container div:not(:last-of-type) {
+    border-right: 1px solid lightgrey;
+  }
+}
+/*# sourceMappingURL=style.css.map */

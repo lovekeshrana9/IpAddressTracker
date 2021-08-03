@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.arrow{
+    background: black;
+}
+
+#map{
+    height: 500px;
+    z-index: 1;
+}
+
+header{
+    background: url('../assets/Images/pattern-bg.png');
+    h2{
+        color: white;
+        margin-top: 0;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        padding-block: 25px;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    position: relative;
+    padding-bottom: 170px;
+    
+}
+
+#isp{
+    margin-bottom: 0;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    width: 90%; 
+    margin-inline: 5%;
+    padding-block: 20px;
+    border-radius: 12px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+
+    div{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    label{
+        color: grey;
+        font-size: 13px;
+        font-weight: bold;
+        
+    }
+
+    p{
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 20px;
+
+    }
+}
+
+.search-container{
+    display: flex;
+    margin-bottom: 25px;
+    width: clamp( 300px, 90%, 650px);
+    margin-inline: auto;
+
+    #searchInput{
+        padding-left: 10px;
+        padding-block: 15px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        width: calc(90% - 27px);
+        font-size: 15px;
+    }
+
+    #searchInput::placeholder{
+        color: gray;
+    }
+
+    .arrow{
+        padding: 20px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 668px) {
+
+    header{
+        padding-bottom: 50px;
+    }
+
+    .info-container{
+        flex-direction: row;
+
+        div:not(:last-of-type){
+            border-right: 1px solid lightgrey;
+        }
+    }
+}
